@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact_us_styles.css">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+</head>
+
+<body>
+<!------------------------------ navigation ---------------------------------->
+<nav>
+
+  <div class="logoSection">
+	<img src="./images/logo.jpg">
+  </div>
+
+  <div class="navButtons">
+
+            <a href="./index.html" class="navItem"><p>Home</p></a>
+		<a href="./what_we_do.html" class="navItem"><p>What We Do</p></a>		
+		<a href="./contact_us.html" class="navItem" target="_blank"><p>Contact Us</p></a>	
+		<a href="./sign_up.html" class="navItem"><p>Sign Up</p></a>		
+  </div>
+
+  <div class="date_and_time">
+	<script>
+		function getTime() {
+  			var time = new Date();
+  			var hours = time.getHours();
+  			var minutes = time.getMinutes();
+  			var seconds = time.getSeconds();
+  			var date = time.getDate();
+  			var month = time.getMonth() + 1;
+  			var year = time.getFullYear();
+  			document.getElementById("time").innerHTML = date + "/" + month + "/" + year +" - "+ hours + ":" + minutes + ":" + seconds;
+		}
+			setInterval(getTime, 1000); // Update the time every second
+	</script>
+
+	<time id="time"></time>
+  </div>
+
+</nav>
+<!------------------------------ main body ---------------------------------->
+<div class="mainSection">
+
+<!--------Main Body Section A--------->
+
+	<div class="mainSection_a">
+		<img src="./images/small_dog.jpg"  width="240px" height="180px"> 
+	</div>
+
+<!--------Main Body Section B--------->
+
+	<div class="mainSection_b">
+
+		<div class="mainHeader">
+			<p>Get In Touch</p>
+		</div>
+
+		<div class="contacts">
+
+			<div class="address">
+
+				<div class="icon_address">
+					<img src="./images/location.png"  width="30px" height="30px"> 
+				</div>
+
+				<div class="text_address">
+
+					<address>
+						6 Clark Road, Florentia,<br> 
+						Alberton Johannesburg, <br> 
+						South Africa
+					</address>
+
+				</div>
+
+			</div>
+
+			<div class="phone">
+
+				<div class="icon">
+					<img src="./images/phone.png"  width="30px" height="30px">
+				</div>
+
+				<div class="text">
+					011 907 3590
+				</div>
+
+			</div>
+
+			<div class="email">
+
+				<div class="icon">
+					<img src="./images/email.png"  width="30px" height="30px">
+				</div>
+
+				<div class="link">
+					<a href="mailto:nspca@nspca.co.za" class="link">nspca@nspca.co.za</a>
+				</div>
+
+			</div>
+
+			<div class="website">
+
+				<div class="icon">
+					<img src="./images/web.png"  width="30px" height="30px">
+				</div>
+
+				<div class="link">
+					<a href="https://www.nspca.co.za/" class="link" target="_blank">www.nspca.co.za</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="missionStatement">
+			
+			<blockquote>"Our mission is to care for and safeguard <strong>every single animal</strong> ,promoting their well-being and ensuring the full enforcement and reverence of their <strong>legal protections</strong>  as prescribed by South African law."</blockquote>
+
+		</div>
+
+	</div>
+
+<!--------Main Body Section C--------->
+
+	<div class="mainSection_c">
+		<img src="./images/big_dog.jpg"  width="270px" height="670px"> 
+	</div>
+    
+</div>
+
+<!------------------------------ footer -------------------------------------->
+<footer>
+
+    <div class="footerSection1">
+
+		<a href="./what_we_do.html" class="footItem"><p>What We Do</p></a>
+		<a href="./contact_us.html" class="footItem" target="_blank"><p>Contact Us</p></a>
+		<a href="./sign_up.html" class="footItem"><p>Sign Up</p></a>
+
+    </div>
+
+    <div class="footerSection2">
+
+	<img src="./images/facebook.png"  width="40px" height="40px"> 
+	<img src="./images/instagram.png" width="40px" height="40px">
+	<img src="./images/linkedin.png" width="40px" height="40px">
+	<img src="./images/twitter.png" width="40px" height="40px">
+
+    </div>
+
+    <div class="footerSection3">
+	<p class="footItem">&copy Society for the Prevention of Cruelty to Animals</p>
+    </div>
+
+
+</footer>
+
+ 
+</body
+
+
+</html>

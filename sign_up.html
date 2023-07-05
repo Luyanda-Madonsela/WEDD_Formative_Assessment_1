@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="sign_up_styles.css">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+</head>
+
+<body>
+<!------------------------------ navigation ---------------------------------->
+<nav>
+
+  <div class="logoSection">
+	<img src="./images/logo.jpg">
+  </div>
+
+  <div class="navButtons">
+
+            <a href="./index.html" class="navItem"><p>Home</p></a>
+		<a href="./what_we_do.html" class="navItem"><p>What We Do</p></a>		
+		<a href="./contact_us.html" class="navItem" target="_blank"><p>Contact Us</p></a>	
+		<a href="./sign_up.html" class="navItem"><p>Sign Up</p></a>		
+  </div>
+
+  <div class="date_and_time">
+	<script>
+		function getTime() {
+  			var time = new Date();
+  			var hours = time.getHours();
+  			var minutes = time.getMinutes();
+  			var seconds = time.getSeconds();
+  			var date = time.getDate();
+  			var month = time.getMonth() + 1;
+  			var year = time.getFullYear();
+  			document.getElementById("time").innerHTML = date + "/" + month + "/" + year +" - "+ hours + ":" + minutes + ":" + seconds;
+		}
+			setInterval(getTime, 1000); // Update the time every second
+	</script>
+
+	<time id="time"></time>
+  </div>
+
+</nav>
+<!------------------------------ main body ---------------------------------->
+<div class="mainSection">
+
+<!--------Main Body Section A--------->
+
+	<div class="mainSection_a">
+		
+	</div>
+
+<!--------Main Body Section B--------->
+
+	<div class="mainSection_b">
+
+		<div class="mainHeader">
+			<p>Sign Up Below:</p>
+		</div>
+
+		<div class="form">
+
+			<div class="name">
+				<label for="name">Name:</label>
+				<input type="text" id="name">
+			</div>
+
+			<div class="surname">
+				<label for="surname">Surname:</label>
+				<input type="text" id="surname">
+			</div>
+
+			<div class="phone">
+				<label for="phone">Phone:</label>
+				<input type="text" id="phone">
+			</div>
+
+			<div class="radio_buttons">
+				
+				<div class="radio1">
+					<input type="radio" id="donate" name="donate">
+					<label for="donate">I would like to donate money</label>
+				</div>
+
+				<div class="radio2">
+					<input type="radio" id="volunteer" name="volunteer">
+					<label for="volunteer">I would like to volunteer at the SPCA</label>
+				</div>
+
+			</div>
+
+			<div class="pulldown_menu">
+
+				<div class="pulldown_menu_header">
+					<h3>What is your favorite dog breed?</h3>
+				</div>
+
+				<div class="dropdown">
+
+					<select class="dropdown" name="dog_breed">
+  						<option value="golden_retriever">Golden Retriever</option>
+  						<option value="labrador_retriever">Labrador Retriever</option>
+  						<option value="german_shepherd">German Shepherd</option>
+  						<option value="beagle">Beagle</option>
+  						<option value="poodle">Poodle</option>
+  						<option value="dachshund">Dachshund</option>
+  						<option value="bulldog">Bulldog</option>
+  						<option value="french_bulldog">French Bulldog</option>
+ 						<option value="pug">Pug</option>
+					</select>
+
+				</div>
+
+			</div>
+
+			<div class="submitButton" id=okButt>
+				<button type="submit">OK</button>
+
+				<script>
+
+					function showMessage() {
+  						alert("Thank you for your enquiry.");
+					}
+
+					document.getElementById("okButt").addEventListener("click", showMessage);
+
+				</script>
+			</div>
+
+		</div>
+
+		<div>
+
+		</div>
+
+	</div>
+
+<!--------Main Body Section C--------->
+
+	<div class="mainSection_c">
+
+	</div>
+    
+</div>
+<!------------------------------ footer ------------------------------------->
+<footer>
+
+    <div class="footerSection1">
+
+		<a href="./what_we_do.html" class="footItem"><p>What We Do</p></a>
+		<a href="./contact_us.html" class="footItem" target="_blank"><p>Contact Us</p></a>
+		<a href="./sign_up.html" class="footItem"><p>Sign Up</p></a>
+
+    </div>
+
+    <div class="footerSection2">
+
+	<img src="./images/facebook.png"  width="40px" height="40px"> 
+	<img src="./images/instagram.png" width="40px" height="40px">
+	<img src="./images/linkedin.png" width="40px" height="40px">
+	<img src="./images/twitter.png" width="40px" height="40px">
+
+    </div>
+
+    <div class="footerSection3">
+	<p class="footItem">&copy Society for the Prevention of Cruelty to Animals</p>
+    </div>
+
+
+</footer>
+
+ 
+</body
+
+
+</html>
